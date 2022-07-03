@@ -1,0 +1,36 @@
+.bize {
+  padding: 90px 0 80px;
+  text-align: center;
+
+  .container {
+
+    .bize-img {
+      width: 90px;
+      height: 90px;
+    }
+
+    .bize-title {
+      font-size: 36px;
+      margin-bottom: 12px;
+    }
+
+    .bize-text {
+      margin-bottom: 20px;
+    }
+
+    .bize-btn {
+      margin: 0 auto;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 100px 0;
+
+    .container {
+
+      .bize-btn {
+        padding: 25px 40px;
+      }
+    }
+  }
+}

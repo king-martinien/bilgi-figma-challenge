@@ -1,0 +1,42 @@
+.test {
+  padding: 50px 0 80px;
+  background-color: $primary;
+  color: $white;
+  //background-image: url("/images/test-bg.png");
+  background-size: cover;
+  text-align: center;
+
+  .title {
+    font-size: 36px;
+    margin-bottom: 15px;
+  }
+
+  .description {
+    margin-bottom: 70px;
+  }
+
+  .group {
+    gap: 40px;
+
+    p {
+      font-weight: bold;
+      font-size: 18px;
+      max-width: 190px;
+    }
+
+    img {
+      width: 36px;
+      height: 36px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .group {
+      flex-direction: row;
+
+      img {
+        transform: rotate(-90deg);
+      }
+    }
+  }
+}

@@ -1,0 +1,60 @@
+.trust {
+  background-color: $gray;
+  padding: 40px 0;
+  text-align: center;
+
+  .title {
+    font-size: 36px;
+    margin-bottom: 14px;
+  }
+
+  .text {
+    margin-bottom: 40px;
+  }
+
+  .partners {
+    gap: 20px;
+
+    .block {
+      gap: 20px;
+
+      .img {
+        border-radius: 8px;
+        background-color: $white;
+        width: 200px;
+        height: 100px;
+        padding: 20px;
+      }
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 45px 0 74px;
+
+    .partners {
+      flex-direction: row;
+      flex-wrap: wrap;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .block {
+        flex-direction: row;
+      }
+    }
+  }
+
+  @media screen and (min-width: 1124px) {
+
+    .partners {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+
+      .block {
+        flex-direction: column;
+      }
+
+    }
+  }
+
+}

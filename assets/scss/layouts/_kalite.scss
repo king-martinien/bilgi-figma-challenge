@@ -1,0 +1,70 @@
+.kalites {
+  padding: 90px 0 80px;
+  text-align: center;
+
+  .container {
+    gap: 60px;
+  }
+
+  .kalite {
+
+    .kalite-img {
+      border-radius: 8px;
+      overflow: hidden;
+      margin-bottom: 30px;
+    }
+
+    .kalite-infos {
+
+      .kalite-title {
+        font-size: 36px;
+        margin-bottom: 20px;
+      }
+
+      .kalite-description {
+        margin-bottom: 40px;
+        color: $dark-gray;
+      }
+
+      .kalite-btn {
+        width: 100%;
+        height: 48px;
+      }
+    }
+  }
+
+  @media screen and (min-width: 850px) {
+    text-align: left;
+    .kalite {
+      display: flex;
+      align-items: stretch;
+      gap: 56px;
+
+      &:first-child {
+        flex-direction: row-reverse;
+      }
+
+      .kalite-img {
+        display: flex;
+        height: 100%;
+        flex: 1;
+      }
+
+      .kalite-infos {
+        flex: 1;
+
+        .kalite-title {
+          font-size: 52px;
+        }
+
+        .kalite-description {
+          line-height: 30px;
+        }
+
+        .kalite-btn {
+          width: 160px;
+        }
+      }
+    }
+  }
+}

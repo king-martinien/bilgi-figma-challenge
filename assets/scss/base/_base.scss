@@ -1,0 +1,47 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::selection {
+  background: $primary;
+  color: $white;
+}
+
+body {
+  font-family: Manrope, sans-serif;
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: none;
+  font-size: initial;
+  font-family: inherit;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  -webkit-user-drag: none;
+  user-select: none;
+}
+
+input {
+  font-family: inherit;
+  font-size: 14px;
+  border: none;
+}
+
+ul {
+  list-style: none;
+}

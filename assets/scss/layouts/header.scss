@@ -1,0 +1,54 @@
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding: 35px 0;
+  z-index: 99;
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(3px);
+
+  .header-container {
+    .header-nav {
+
+      .hamburger {
+        width: 35px;
+        height: 35px;
+      }
+
+      .nav-menu {
+
+        &__link {
+          font-size: 14px;
+          font-weight: bold;
+          display: none;
+        }
+      }
+
+      @media screen and (min-width: 850px) {
+        justify-content: flex-end;
+        .hamburger {
+          display: none;
+        }
+
+        .nav-menu {
+          gap: 40px;
+
+          &__link {
+            display: block;
+            transition: color .3s ease-out;
+
+            &:hover {
+              color: $primary;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.main {
+  min-height: 100vh;
+}
+

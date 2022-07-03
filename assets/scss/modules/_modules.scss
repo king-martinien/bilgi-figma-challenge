@@ -1,0 +1,52 @@
+.container {
+  max-width: 92%;
+  margin: 0 auto;
+
+  @media screen and (min-width: 375px) {
+    max-width: 90%;
+  }
+
+  @media screen and (min-width: 1024px) {
+    max-width: 850px;
+    width: 850px;
+  }
+
+  @media screen and (min-width: 1240px) {
+    max-width: 1153px;
+    width: 1153px;
+  }
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.ali-center {
+  align-items: center;
+}
+
+.just-center {
+  justify-content: center;
+}
+
+.just-between {
+  justify-content: space-between;
+}
+
+.just-end {
+  justify-content: flex-end;
+}
+
+.btn {
+  background-color: $primary;
+  color: $white;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 10px;
+  height: 40px;
+  font-size: 14px;
+}
